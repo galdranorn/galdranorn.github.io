@@ -1,11 +1,11 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { IntlProvider, addLocaleData, FormattedMessage } from "react-intl";
+import { IntlProvider, addLocaleData } from "react-intl";
 
 import plLocaleData from "react-intl/locale-data/pl";
 import enLocaleData from "react-intl/locale-data/en";
-import { setPolish, setEnglish } from "./actions/locale";
+import { setLanguage } from "./actions/locale";
 import messages from "./messages";
 
 //import logo from './logo.svg';
@@ -23,31 +23,16 @@ addLocaleData(plLocaleData);
 addLocaleData(enLocaleData);
 
 export class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      
-    };
-  }
-
   render() {
-    console.log(this.props)
     return (
-      <IntlProvider
-        locale={ this.props.lang }
-        messages={ messages[this.props.lang] }
-      >
+      <IntlProvider locale={this.props.lang} messages={messages[this.props.lang]}>
         <div id='App' className='App'>
-            <FormattedMessage id='sample' />
-            <button onClick={() => this.props.setPolish('pl')}>PL</button>
-            <button onClick={() => this.props.setEnglish()}>EN</button>
-            <Menu />
+            <Menu setLanguage={this.props.setLanguage}/>
             <Hero />
             <About />
             <Portfolio />
             <Technologies />
             <Contact />
-
         </div>
       </IntlProvider>
     );
@@ -61,10 +46,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({
-    setPolish, 
-    setEnglish
-  }, dispatch)
+  return bindActionCreators({setLanguage}, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

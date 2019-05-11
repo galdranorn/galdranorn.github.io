@@ -2,9 +2,7 @@ export default function locale (state = {
     'lang': 'en'
 }, action) {
     switch(action.type) {
-        case "SET_POLISH":
-        case "SET_ENGLISH":
-            console.log('payload: '+action.payload)
+        case "SET_LANGUAGE":
             return {
                 'lang': action.payload
             };

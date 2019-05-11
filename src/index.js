@@ -7,6 +7,7 @@ import reducer from './reducers/reducer';
 
 import App from './App';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 
 import * as serviceWorker from './serviceWorker';

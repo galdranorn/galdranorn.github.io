@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+
+.Hero {
+    padding-top: 56px;
+    height: 100vh;
+    background: url('./hero.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    &-text {
+        padding: 80px;
+        &--hi{}
+        &--name {
+            width: 500px;
+            border-bottom: 10px solid $themeColour;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        &--position {
+            padding-bottom: 10vh;
+        }
+    }
+}

@@ -1,13 +1,6 @@
-export const setPolish = (val) => {
+export const setLanguage = (val) => {
     return {
-        type: "SET_POLISH",
+        type: "SET_LANGUAGE",
         payload: val
-    }
-};
-
-export const setEnglish = () => {
-    return {
-        type: "SET_ENGLISH",
-        payload: 'en'
     }
 };
