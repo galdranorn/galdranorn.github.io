@@ -4,13 +4,14 @@
     width: 100%;
     position: fixed;
     top: 0;
+    background: $themeGreyTrans;
+    z-index: 3;
 
     &-lang {
         color: white;
         position: absolute;
         top: 12px;
         left: 12px;
-        z-index: 3;
         &--button {
             background: transparent;
             border: none;

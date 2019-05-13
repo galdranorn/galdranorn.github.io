@@ -3,7 +3,7 @@
 .Hero {
     padding-top: 56px;
     height: 100vh;
-    background: url('./hero.png');
+    background: url('../../images/hero.png');
     background-size: cover;
     background-repeat: no-repeat; 
     text-transform: uppercase;
@@ -14,12 +14,14 @@
     justify-content: center;
     &-text {
         padding: 80px;
-        &--hi{}
+        &--hi{
+            padding-left: 20px;
+        }
         &--name {
             width: 500px;
             border-bottom: 10px solid $themeColour;
-            font-size: 60px;
-            font-weight: bold;
+            font-size: 90px;
+            font-weight: 900;
         }
         &--position {
             padding-bottom: 10vh;

@@ -22,7 +22,7 @@ export class Menu extends React.Component {
     createHome() {
         return (
             <NavItem className='Menu-navbar--nav-item'>
-                <NavLink className='Menu-navbar--nav-item-link' href="#hero">
+                <NavLink className='Menu-navbar--nav-item-link' href="#Hero">
                     Start
                 </NavLink>
             </NavItem>

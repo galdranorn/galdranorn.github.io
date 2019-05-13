@@ -1,0 +1,32 @@
+@import '../../scss/mixins';
+
+.Technologies {
+    @include section;
+
+    &-header {
+        @include sectionHeader;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &-icons {
+        .bg-1 { background: url('../../images/icons/1html.png') };
+        .bg-2 { background: url('../../images/icons/2css.png') };
+        .bg-3 { background: url('../../images/icons/3rwd.png') };
+        .bg-4 { background: url('../../images/icons/4js.png') };
+        .bg-5 { background: url('../../images/icons/5bootstrap.png') };
+        .bg-6 { background: url('../../images/icons/6sass.png') };
+        .bg-7 { background: url('../../images/icons/7jquery.png') };
+        .bg-8 { background: url('../../images/icons//8api.png') };
+        .bg-9 { background: url('../../images/icons/9ajax.png') };
+        .bg-10 { background: url('../../images/icons/10node.png') };
+        .bg-11 { background: url('../../images/icons/11express.png') };
+        .bg-12 { background: url('../../images/icons/12mongo.png') };
+        .bg-13 { background: url('../../images/icons/13react.png') };
+        .bg-14 { background: url('../../images/icons/14redux.png') };
+        .bg-15 { background: url('../../images/icons/15git.png') };
+        .bg-16 { background: url('../../images/icons/16npm.png') };
+        .bg-17 { background: url('../../images/icons/17webpack.png') };
+        .bg-18 { background: url('../../images/icons/18mern.png') };
+    }
+}
