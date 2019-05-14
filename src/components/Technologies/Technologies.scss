@@ -6,7 +6,7 @@
     &-header {
         @include sectionHeader;
         width: 50%;
-        margin: 0 auto;
+        margin: 0 auto 40px;
     }
 
     &-icons {
@@ -28,5 +28,12 @@
         .bg-16 { background: url('../../images/icons/16npm.png') };
         .bg-17 { background: url('../../images/icons/17webpack.png') };
         .bg-18 { background: url('../../images/icons/18mern.png') };
+        &--icon {
+            height: 80px;
+            margin: 10px;
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+        }
     }
 }

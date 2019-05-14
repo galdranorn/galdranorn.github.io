@@ -8,6 +8,34 @@
         @include sectionHeader;
         color: white;
         width: 50%;
-        margin: 0 auto;
+        margin: 0 auto 40px;
+    }
+    &-projects {
+        &--line {
+            &-vertical, &-element {
+                background-size: contain !important;
+                background-repeat: no-repeat !important;
+            }
+            &-vertical {
+                background: url('../../images/projects/vertical.png');
+                background-position: center !important;
+            }
+            &-text {
+                color: white;
+                text-align: right;
+            }
+            &-element {
+                height: 150px;
+                background-position: right !important;
+                transition: .2s ease-in;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .bg-1 {
+            background: url('../../images/projects/project-1a.png');
+            &:hover {background: url('../../images/projects/project-1.png')}
+        }
     }
 }
