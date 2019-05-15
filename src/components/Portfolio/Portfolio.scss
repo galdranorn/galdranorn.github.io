@@ -11,22 +11,36 @@
         margin: 0 auto 40px;
     }
     &-projects {
+        &--moved {
+            position: relative;
+            bottom: 30px;
+        }
         &--line {
-            &-vertical, &-element {
-                background-size: contain !important;
-                background-repeat: no-repeat !important;
+            height: 150px;
+            .moved {
+                align-self: flex-end;
+                text-align: left;
             }
-            &-vertical {
-                background: url('../../images/projects/vertical.png');
-                background-position: center !important;
+            .bordered {
+                border-right: 7px solid $themeColour;
+            }
+            .hgt {
+                height: 100px;
             }
             &-text {
                 color: white;
                 text-align: right;
+                height: 100px;
+                &-header {
+                    font-weight: 600;
+                    color: $themeColour;
+                }
             }
             &-element {
-                height: 150px;
-                background-position: right !important;
+                background-size: contain !important;
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+                height: 100px;
                 transition: .2s ease-in;
                 &:hover {
                     cursor: pointer;
@@ -34,8 +48,20 @@
             }
         }
         .bg-1 {
-            background: url('../../images/projects/project-1a.png');
-            &:hover {background: url('../../images/projects/project-1.png')}
+            background: url('../../images/projects/project-1.png');
+            &:hover {background: url('../../images/projects/project-1a.png')}
+        }
+        .bg-2 {
+            background: url('../../images/projects/project2.png');
+            &:hover {background: url('../../images/projects/project2a.png')}
+        }
+        .bg-3 {
+            background: url('../../images/projects/project-3.png');
+            &:hover {background: url('../../images/projects/project-3a.png')}
+        }
+        .bg-4 {
+            background: url('../../images/projects/project-4.png');
+            &:hover {background: url('../../images/projects/project-4a.png')}
         }
     }
 }
