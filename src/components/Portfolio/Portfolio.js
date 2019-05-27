@@ -25,8 +25,8 @@ export class Portfolio extends React.Component {
 
     // create different "more projects" button depends on state 
     createButton() {
-        if (this.state.projects[2]===false) {return <button onClick={this.nextProjects()} className="Portfolio-projects--button">More</button>}
-        else {return <button className="Portfolio-projects--button">See all on GH</button>}
+        if (this.state.projects[2]===false) {return <button onClick={this.nextProjects()} className="Portfolio-button">More</button>}
+        else {return <button className="Portfolio-button">See all on GH</button>}
     }
 
     render() {
@@ -40,6 +40,7 @@ export class Portfolio extends React.Component {
         return (
             <div id='Portfolio' className='Portfolio'>
                 <h1 className='Portfolio-header'>Portfolio</h1>
+                <div className='container'>
                 {
                     filtered.map((project, i) => {
                         return (
@@ -55,6 +56,7 @@ export class Portfolio extends React.Component {
                         )
                     }) 
                 }
+                </div>
                 { this.createButton() }
             </div>
         )

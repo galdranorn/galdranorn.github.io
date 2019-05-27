@@ -11,82 +11,92 @@
         width: 50%;
         margin: 0 auto 40px;
     }
-    &-projects {
-        &--button {
-            position: relative;
-            top: 70px;
+
+    &-button {
+        position: relative;
+        top: 70px;
+    }
+
+    &-line {
+        height: 200px;
+
+        .moved {
+            align-self: flex-end;
+            text-align: left;
         }
-        &--moved {
-            position: relative;
-            bottom: 30px;
-        }
-        &--line {
-            height: 150px;
-            .moved {
-                align-self: flex-end;
-                text-align: left;
+
+        .bordered {border-right: 7px solid $themeColour;}
+        .hgt {height: 140px;}
+
+        &--text {
+            color: white;
+            text-align: right;
+            height: 155px;
+            &-header {
+                font-weight: 600;
+                font-size: 18px;
+                color: $themeColour;
             }
-            .bordered {
-                border-right: 7px solid $themeColour;
-            }
-            .hgt {
-                height: 100px;
-            }
-            &-text {
-                color: white;
-                text-align: right;
-                height: 155px;
-                &-header {
-                    font-weight: 600;
-                    color: $themeColour;
-                }
-            }
-            &-element {
-                background-size: contain !important;
-                background-repeat: no-repeat !important;
-                background-position: center !important;
-                position: relative;
-                height: 140px;
-                transition: .2s ease-in;
-                margin: 5px 0;
-                &:hover {
-                    cursor: pointer;
+            &-icons {
+                &-icon {
+                    margin: 0 5px;
+                    color: white;
+                    font-size: 20px;
+                    &:hover {
+                        color: $themeColour;
+                        cursor: pointer;
+                    }
                 }
             }
         }
-        .hover-left {
-            background: url('../../images/projects/monstera-left.png');
-            top: 0px;
-            left: 20px;
-        }
-        .hover-right {
-            background: url('../../images/projects/monstera-right.png');
-            top: 10px;
-            left: 15px;
-        }
-        .hover-left, .hover-right {
-            background-size: 150px 140px;
-            background-color: transparent;
-            position: absolute;
+
+        &--element {
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            position: relative;
             height: 140px;
-            width: 150px;
-            z-index: 3;
-            transition: .5s ease-in;
+            transition: .2s ease-in;
+            margin: 5px 0;
             &:hover {
-                opacity: 0;
+                cursor: pointer;
             }
-        }
-        .bg-1 {
-            background: url('../../images/projects/project-1.png');
-        }
-        .bg-2 {
-            background: url('../../images/projects/project2.png');
-        }
-        .bg-3 {
-            background: url('../../images/projects/project-3.png');
-        }
-        .bg-4 {
-            background: url('../../images/projects/project-4.png');
+            &-hover-left {
+                background: url('../../images/projects/monstera-left.png');
+            }
+            &-hover-right {
+                background: url('../../images/projects/monstera-right.png');
+            }
+            &-hover-left, &-hover-right {
+                top: 0;
+                left: 0;
+                background-size: contain;
+                background-position: center;
+                background-color: transparent;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: 3;
+                transition: .5s ease-in;
+                &:hover {
+                    opacity: 0;
+                }
+            }
         }
     }
+
+    .bg-1 {background: url('../../images/projects/project-1.png');}
+    .bg-2 {background: url('../../images/projects/project2.png');}
+    .bg-3 {background: url('../../images/projects/project-3.png');}
+    .bg-4 {background: url('../../images/projects/project-4.png');}
+    .bg-5 {background: url('../../images/projects/project5.png');}
+    .bg-6 {background: url('../../images/projects/project6.png');}
+    .bg-7 {background: url('../../images/projects/project7.png');}
+    .bg-8 {background: url('../../images/projects/project8.png');}
+    .bg-9 {background: url('../../images/projects/project9.png');}
+    .bg-10 {background: url('../../images/projects/project10.png');}
+    .bg-11 {background: url('../../images/projects/project11.png');}
+    .bg-12 {background: url('../../images/projects/project12.png');}
+    .bg-13 {background: url('../../images/projects/project13.png');}
+    .bg-14 {background: url('../../images/projects/project14.png');}
 }

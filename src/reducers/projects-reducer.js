@@ -7,7 +7,9 @@ export default function projects() {
             "moved": "",
             "description": "Portfolio-project-1",
             "id": 1,
-            "row": "projects10",
+            "row": "projects2",
+            "demo": "https://galdranorn.github.io/golden-project/",
+            "repo": "https://github.com/galdranorn/golden-project",
         },
         {
             "name" : "Administration Panel",
@@ -16,7 +18,7 @@ export default function projects() {
             "moved": "moved",
             "description": "Portfolio-project-2",
             "id": 2,
-            "row": "projects1",
+            "row": "projects2",
         },
         {
             "name" : "Round the World",
