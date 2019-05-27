@@ -3,6 +3,7 @@
 .Portfolio {
     @include section;
     background: $themeGrey;
+    padding-bottom: 100px;
 
     &-header {
         @include sectionHeader;
@@ -11,6 +12,10 @@
         margin: 0 auto 40px;
     }
     &-projects {
+        &--button {
+            position: relative;
+            top: 70px;
+        }
         &--moved {
             position: relative;
             bottom: 30px;
@@ -30,7 +35,7 @@
             &-text {
                 color: white;
                 text-align: right;
-                height: 100px;
+                height: 155px;
                 &-header {
                     font-weight: 600;
                     color: $themeColour;
@@ -40,28 +45,48 @@
                 background-size: contain !important;
                 background-repeat: no-repeat !important;
                 background-position: center !important;
-                height: 100px;
+                position: relative;
+                height: 140px;
                 transition: .2s ease-in;
+                margin: 5px 0;
                 &:hover {
                     cursor: pointer;
                 }
             }
         }
+        .hover-left {
+            background: url('../../images/projects/monstera-left.png');
+            top: 0px;
+            left: 20px;
+        }
+        .hover-right {
+            background: url('../../images/projects/monstera-right.png');
+            top: 10px;
+            left: 15px;
+        }
+        .hover-left, .hover-right {
+            background-size: 150px 140px;
+            background-color: transparent;
+            position: absolute;
+            height: 140px;
+            width: 150px;
+            z-index: 3;
+            transition: .5s ease-in;
+            &:hover {
+                opacity: 0;
+            }
+        }
         .bg-1 {
             background: url('../../images/projects/project-1.png');
-            &:hover {background: url('../../images/projects/project-1a.png')}
         }
         .bg-2 {
             background: url('../../images/projects/project2.png');
-            &:hover {background: url('../../images/projects/project2a.png')}
         }
         .bg-3 {
             background: url('../../images/projects/project-3.png');
-            &:hover {background: url('../../images/projects/project-3a.png')}
         }
         .bg-4 {
             background: url('../../images/projects/project-4.png');
-            &:hover {background: url('../../images/projects/project-4a.png')}
         }
     }
 }

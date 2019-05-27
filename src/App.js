@@ -23,6 +23,7 @@ addLocaleData(plLocaleData);
 addLocaleData(enLocaleData);
 
 export class App extends React.Component {
+  
   render() {
     return (
       <IntlProvider locale={this.props.lang} messages={messages[this.props.lang]}>
@@ -30,7 +31,7 @@ export class App extends React.Component {
             <Menu setLanguage={this.props.setLanguage}/>
             <Hero />
             <About />
-            <Portfolio />
+            <Portfolio projects={this.props.projects}/>
             <Technologies />
             <Contact />
         </div>
@@ -41,7 +42,8 @@ export class App extends React.Component {
 
 function mapStateToProps(state) {
   return {
-      lang: state.locale.lang
+      lang: state.locale.lang,
+      projects: state.projects,
   }
 }
 

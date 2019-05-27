@@ -9,6 +9,9 @@ export default {
         'About-description-3': 'I believe, that my willingness to develop and powerful motivation, I will prove myself in IT sector as front-end/web developer.',
         'About-description-4': 'Privately I am a rock music fan, Bieszczady mountains addict and cat lover. In free time I realize myself creatively by applied arts and photography.',
         'Portfolio': 'Portfolio',
+        'Portfolio-project-1': 'sdfsd',
+        'Portfolio-project-2': 'dsfdsf',
+        'Portfolio-project-3': 'sdfdsf',
         'Technologies': 'Technologies',
         'Contact': 'Contact'
     },
@@ -22,6 +25,9 @@ export default {
         'About-description-3': 'Wierzę, że dzięki mojej ogromnej chęci rozwoju i motywacji, doskonale sprawdzę się w branży IT jako Front-End/Web Developer.',
         'About-description-4': 'Prywatnie jestem miłośniczką muzyki rockowej, Bieszczad i kotów. W wolnych chwilach realizuję się artystycznie poprzez sztukę użytkową i fotografię.',
         'Portfolio': 'Portfolio',
+        'Portfolio-project-1': 'sdfs',
+        'Portfolio-project-2': 'sdfsdf',
+        'Portfolio-project-3': 'sfdsf',
         'Technologies': 'Technologie',
         'Contact': 'Kontakt'
     }
