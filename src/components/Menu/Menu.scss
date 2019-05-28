@@ -3,20 +3,25 @@
 .Menu {
     width: 100%;
     position: fixed;
+    padding: 15px 20px;
+    font-size: 1.4em;
     top: 0;
-    background: $themeGreyTrans;
     z-index: 3;
+    transition: .5s;
+    //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
     &-lang {
-        color: white;
+        color: $themeLightGrey;
         position: absolute;
-        top: 12px;
-        left: 12px;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
         z-index: 4;
+        transition: .3s;
         &--button {
             background: transparent;
             border: none;
-            color: white;
+            color: $themeLightGrey;
             &:hover {
                 color: $themeColour;
             }
@@ -24,11 +29,19 @@
     }
     
     &-navbar {
-        &--hamburger {}
+        &--hamburger {  
+        }
+        .navbar-nav {
+            padding: 5px 20px;
+            .nav-item .nav-link {
+                color: $themeLightGrey;
+            }
+        }
         &--nav {
+            transition: .3s;
             &-item {
                 &-link {
-                    color: white;
+                    color: $themeLightGrey;
                     text-transform: uppercase;
                     &:hover {
                         color: $themeColour;
@@ -39,6 +52,11 @@
     }
 }
 
+.changeColor {
+    background: $themeGreyTrans;
+    border-radius: 15px;
+}
+
 @media (max-width: 768px) {
     .Menu {
         .navbar {
@@ -46,7 +64,8 @@
         }
         &-lang {}
         &-navbar {
-            &--hamburger {}
+            &--hamburger {
+            }
             &--nav {
                 &-item {
                     &-link {}

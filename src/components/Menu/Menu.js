@@ -44,15 +44,15 @@ export class Menu extends React.Component {
 
         return (
             <div className='Menu'>
-                <div className='Menu-lang'>
+                <div id="lang" className='Menu-lang'>
                     <button className='Menu-lang--button' onClick={() => this.props.setLanguage('pl')}>PL</button>|
                     <button className='Menu-lang--button' onClick={() => this.props.setLanguage('en')}>EN</button>
                 </div>
 
-                <Navbar className='Menu-navbar' expand="md">
-                    <NavbarToggler className='Menu-navbar--hamburger' onClick={this.toggle} />
+                <Navbar className='Menu-navbar navbar-dark' expand="md">
+                    <NavbarToggler id="hamburger" className='Menu-navbar--hamburger' onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto Menu-navbar--nav" navbar>
+                        <Nav id="menu" className="ml-auto Menu-navbar--nav" navbar>
                             { this.createHome() }
                             { components.map((component) => this.createNavItem(component)) }
                         </Nav>
