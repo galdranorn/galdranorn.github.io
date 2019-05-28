@@ -3,7 +3,7 @@
 .Portfolio {
     @include section;
     background: $themeGrey;
-    padding-bottom: 100px;
+    padding-bottom: 170px;
 
     &-header {
         @include sectionHeader;
@@ -15,6 +15,14 @@
     &-button {
         position: relative;
         top: 70px;
+        background: $themeColour;
+        border: none;
+        padding: 5px 20px;
+        color: $themeGrey;
+        transition: .2s;
+        &:hover {
+            background: white;
+        }
     }
 
     &-line {
@@ -42,6 +50,7 @@
                     margin: 0 5px;
                     color: white;
                     font-size: 20px;
+                    transition: .2s;
                     &:hover {
                         color: $themeColour;
                         cursor: pointer;
@@ -99,4 +108,5 @@
     .bg-12 {background: url('../../images/projects/project12.png');}
     .bg-13 {background: url('../../images/projects/project13.png');}
     .bg-14 {background: url('../../images/projects/project14.png');}
+    .bg-15 {background: url('../../images/projects/project15.png');}
 }

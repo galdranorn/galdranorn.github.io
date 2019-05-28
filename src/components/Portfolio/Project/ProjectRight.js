@@ -1,0 +1,23 @@
+import React from 'react';
+import '../Portfolio.scss';
+import { FormattedMessage } from 'react-intl';
+
+export const ProjectRight = (props) => (
+    <div className='col-6 hgt moved'>
+        <div className="row">
+            <div className={'col-4 Portfolio-line--element moved ' + props.background}>
+                <div className='Portfolio-line--element-hover-right'></div>
+            </div>
+            <div className='col-8 Portfolio-line--text moved'>
+                <p className="Portfolio-line--text-header">{props.name}</p>
+                <p className="Portfolio-line--text-description"><FormattedMessage id={props.description} /></p>
+                <p className="Portfolio-line--text-icons">
+                    <a href={props.demo} target="_blank"><span className="Portfolio-line--text-icons-icon fas fa-eye"></span></a>
+                    <a href={props.repo} target="_blank"><span className="Portfolio-line--text-icons-icon fas fa-code"></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+);
+
+export default ProjectRight;
