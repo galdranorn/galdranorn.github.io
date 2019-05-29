@@ -138,13 +138,13 @@
 
 @media (max-width: 575.98px) { 
     .Portfolio {
-        padding-bottom: 130px;
         &-header {
             font-size: 2em;
         }
         &-line {
-            height: 600px;
-            .hgt {height: 600px;}
+            min-height: 600px;
+            font-size: 0.9em;
+            .hgt {min-height: 600px;}
             .moved {text-align: center;}
             &--text {
                 text-align: center;
@@ -152,7 +152,7 @@
                 height: 155px;
                 &-header {
                     font-weight: 600;
-                    font-size: 18px;
+                    font-size: 1.1em;
                     color: $themeColour;
                 }
                 &-icons {
