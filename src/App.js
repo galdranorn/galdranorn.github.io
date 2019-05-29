@@ -16,6 +16,7 @@ import { About } from './components/About/About';
 import { Portfolio } from './components/Portfolio/Portfolio';
 import { Technologies } from './components/Technologies/Technologies';
 import { Contact } from './components/Contact/Contact';
+import { Footer } from './components/Footer/Footer';
 
 import './App.scss';
 
@@ -34,6 +35,7 @@ export class App extends React.Component {
             <Portfolio projects={this.props.projects}/>
             <Technologies />
             <Contact />
+            <Footer />
         </div>
       </IntlProvider>
     );

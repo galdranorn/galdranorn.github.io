@@ -44,7 +44,7 @@ export class Menu extends React.Component {
 
         return (
             <div className='Menu'>
-                <div id="lang" className='Menu-lang'>
+                <div id="lang" className='Menu-lang' data-aos='zoom-in'>
                     <button className='Menu-lang--button' onClick={() => this.props.setLanguage('pl')}>PL</button>|
                     <button className='Menu-lang--button' onClick={() => this.props.setLanguage('en')}>EN</button>
                 </div>
@@ -52,7 +52,7 @@ export class Menu extends React.Component {
                 <Navbar className='Menu-navbar navbar-dark' expand="md">
                     <NavbarToggler id="hamburger" className='Menu-navbar--hamburger' onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav id="menu" className="ml-auto Menu-navbar--nav" navbar>
+                        <Nav id="menu" className="ml-auto Menu-navbar--nav" navbar data-aos='zoom-in'>
                             { this.createHome() }
                             { components.map((component) => this.createNavItem(component)) }
                         </Nav>

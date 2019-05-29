@@ -110,3 +110,28 @@
     .bg-14 {background: url('../../images/projects/project14.png');}
     .bg-15 {background: url('../../images/projects/project15.png');}
 }
+
+@media (max-width: 991.98px) { 
+    .Portfolio {
+        &-button {
+            top: 30px;
+        }
+        &-line {
+            height: 400px;
+            .moved {
+                align-self: flex-end;
+                text-align: left;
+            }
+            .bordered {
+                border-right: none
+            }
+            .bordered-bot {
+                border-bottom: 1px solid #454545;
+                padding-bottom: 20px
+            }
+            .hgt {
+                height: 200px;
+            }
+}
+    }
+}

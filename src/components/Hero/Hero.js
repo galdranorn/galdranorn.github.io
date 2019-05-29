@@ -19,9 +19,11 @@ export class Hero extends React.Component {
         return (
             <div id='Hero' className='Hero'>
                 <div className='Hero-text container'>
-                    <p className='Hero-text--hi'><FormattedMessage id='Hero-hi'/></p>
-                    <h1 className='Hero-text--name'>Justyna<br/> Skiberowska</h1>
-                    <h2 className='Hero-text--position'>
+                    <div data-aos='fade-down'>
+                        <p className='Hero-text--hi'><FormattedMessage id='Hero-hi'/></p>
+                        <h1 className='Hero-text--name'>Justyna<br/> Skiberowska</h1>
+                    </div>
+                    <h2 className='Hero-text--position' data-aos='fade-up'>
                     Junior <span id="typed"></span>
                     </h2>
                 </div>

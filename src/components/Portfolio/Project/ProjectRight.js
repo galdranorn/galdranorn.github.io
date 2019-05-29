@@ -3,12 +3,12 @@ import '../Portfolio.scss';
 import { FormattedMessage } from 'react-intl';
 
 export const ProjectRight = (props) => (
-    <div className='col-6 hgt moved'>
-        <div className="row">
-            <div className={'col-4 Portfolio-line--element moved ' + props.background}>
+    <div className='col-sm-12 col-md-12 col-lg-6 hgt moved'>
+        <div className="row bordered-bot">
+            <div className={'col-sm-4 col-md-4 col-lg-4 Portfolio-line--element moved ' + props.background}>
                 <div className='Portfolio-line--element-hover-right'></div>
             </div>
-            <div className='col-8 Portfolio-line--text moved'>
+            <div className='col-sm-8 col-md-8 col-lg-8 Portfolio-line--text moved'>
                 <p className="Portfolio-line--text-header">{props.name}</p>
                 <p className="Portfolio-line--text-description"><FormattedMessage id={props.description} /></p>
                 <p className="Portfolio-line--text-icons">

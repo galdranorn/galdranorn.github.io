@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import $ from 'jquery';
+import AOS from 'aos';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -10,10 +12,15 @@ import App from './App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
+import 'aos/dist/aos.css';
 
 import * as serviceWorker from './serviceWorker';
 
 const store = createStore(reducer);
+
+AOS.init({
+    duration: 1200,
+});
 
 ReactDOM.render(
     <Provider store={store}>

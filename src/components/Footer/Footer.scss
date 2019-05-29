@@ -1,0 +1,13 @@
+@import '../../scss/variables';
+
+.Footer {
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: transparent;
+    color: $themeLightGrey;
+    opacity: 0.7;
+    padding: 20px;
+    text-align: right;
+}

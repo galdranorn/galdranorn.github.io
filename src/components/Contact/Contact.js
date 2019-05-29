@@ -7,37 +7,39 @@ export class Contact extends React.Component {
         return (
             <div id='Contact' className='Contact'>
                 <div className='container'>
-                    <h1 className='Contact-header'>Contact</h1>
-                    <div className='Contact-line row'>
-                        <div className='col-2 Contact-line--icon icon'>
-                            <span className='fab fa-github'></span>
+                    <h1 className='Contact-header' data-aos='fade-down'>Contact</h1>
+                    <div data-aos='fade-up'>
+                        <div className='Contact-line row'>
+                            <div className='col-2 Contact-line--icon icon'>
+                                <span className='fab fa-github'></span>
+                            </div>
+                            <div className='col-6 Contact-line--link'>
+                                <a className='link' href="https://github.com/galdranorn">galdranorn</a>
+                            </div>
                         </div>
-                        <div className='col-6 Contact-line--link'>
-                            <a className='link' href="https://github.com/galdranorn">galdranorn</a>
+                        <div className='Contact-line row'>
+                            <div className='col-2 Contact-line--icon icon'>
+                                <span className='fas fa-at'></span>
+                            </div>
+                            <div className='col-6 Contact-line--link'>
+                                <a className='link' href="mailto:skiberowska.justyna@wp.pl">skiberowska.justyna@wp.pl</a>
+                            </div>
                         </div>
-                    </div>
-                    <div className='Contact-line row'>
-                        <div className='col-2 Contact-line--icon icon'>
-                            <span className='fas fa-at'></span>
+                        <div className='Contact-line row'>
+                            <div className='col-2 Contact-line--icon icon'>
+                                <span className='fas fa-mobile-alt'></span>
+                            </div>
+                            <div className='col-6 Contact-line--link'>
+                                <a className='link' href="callto:514673940">+48 514 673 940</a>
+                            </div>
                         </div>
-                        <div className='col-6 Contact-line--link'>
-                            <a className='link' href="mailto:skiberowska.justyna@wp.pl">skiberowska.justyna@wp.pl</a>
-                        </div>
-                    </div>
-                    <div className='Contact-line row'>
-                        <div className='col-2 Contact-line--icon icon'>
-                            <span className='fas fa-mobile-alt'></span>
-                        </div>
-                        <div className='col-6 Contact-line--link'>
-                            <a className='link' href="callto:514673940">+48 514 673 940</a>
-                        </div>
-                    </div>
-                    <div className='Contact-line row'>
-                        <div className='col-2 Contact-line--icon icon'>
-                            <span className='fab fa-linkedin-in'></span>
-                        </div>
-                        <div className='col-6 Contact-line--link'>
-                            <a className='link' href="https://www.linkedin.com/in/justyna-skiberowska/">justyna-skiberowska</a>
+                        <div className='Contact-line row'>
+                            <div className='col-2 Contact-line--icon icon'>
+                                <span className='fab fa-linkedin-in'></span>
+                            </div>
+                            <div className='col-6 Contact-line--link'>
+                                <a className='link' href="https://www.linkedin.com/in/justyna-skiberowska/">justyna-skiberowska</a>
+                            </div>
                         </div>
                     </div>
                 </div>
