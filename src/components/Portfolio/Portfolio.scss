@@ -132,6 +132,50 @@
             .hgt {
                 height: 200px;
             }
+        }
+    }
 }
+
+@media (max-width: 575.98px) { 
+    .Portfolio {
+        padding-bottom: 130px;
+        &-header {
+            font-size: 2em;
+        }
+        &-line {
+            height: 600px;
+            .hgt {height: 600px;}
+            .moved {text-align: center;}
+            &--text {
+                text-align: center;
+                color: white;
+                height: 155px;
+                &-header {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: $themeColour;
+                }
+                &-icons {
+                    margin-bottom: 10px;
+                    &-icon {
+                        margin: 0 5px;
+                        color: white;
+                        font-size: 20px;
+                        transition: .2s;
+                        &:hover {
+                            color: $themeColour;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &--element {
+                height: 90px;
+                margin-top: 30px;
+                &-hover-left, &-hover-right {
+                    display: none;
+                }
+            }
+        }
     }
 }

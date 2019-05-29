@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl';
 export const ProjectLeft = (props) => (
         <div className='col-sm-12 col-md-12 col-lg-6 bordered'>
             <div className='row bordered-bot'>
-                <div className='col-sm-8 col-md-8 col-lg-8 Portfolio-line--text'>
+                <div className='col-sm-8 col-md-8 col-lg-8 order-2 order-md-12 Portfolio-line--text'>
                     <p className="Portfolio-line--text-header">{props.name}</p>
                     <p className="Portfolio-line--text-description"><FormattedMessage id={props.description}/></p>
                     <p className="Portfolio-line--text-icons">

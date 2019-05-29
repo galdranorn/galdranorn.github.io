@@ -5,7 +5,7 @@ import './Technologies.scss';
 export class Technologies extends React.Component {
     createIcon(id) {
         return (
-            <div className={'col-sm-6 col-md-4 col-lg-2 Technologies-icons--icon '+'bg-'+id}></div>
+            <div className={'col-6 col-sm-6 col-md-4 col-lg-2 Technologies-icons--icon '+'bg-'+id}></div>
         )
     }
 
