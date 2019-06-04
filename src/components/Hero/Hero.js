@@ -5,17 +5,20 @@ import $ from "jquery";
 import './Hero.scss';
 
 export class Hero extends React.Component {
-
-    render() {
-        $('document').ready(function(){
-            let typed = new Typed('#typed', {
+    componentDidMount() {
+        let options = {
             strings: ["front-end developer", "React's enthusiast", "coder with passion"],
             backSpeed: 40,
             typeSpeed: 40,
             loop: true
-            });
+        }
+        $('document').ready(function(){
+            let typed = new Typed('#typed', options);
         });
+    }
 
+
+    render() {
         return (
             <div id='Hero' className='Hero'>
                 <div className='Hero-text container'>

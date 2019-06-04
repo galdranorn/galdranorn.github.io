@@ -3,9 +3,9 @@ import { FormattedMessage } from 'react-intl';
 import './Technologies.scss';
 
 export class Technologies extends React.Component {
-    createIcon(id) {
+    createIcon(id, i) {
         return (
-            <div className={'col-6 col-sm-6 col-md-4 col-lg-2 Technologies-icons--icon '+'bg-'+id}></div>
+            <div key={i} className={'animated infinite pulse col-6 col-sm-6 col-md-4 col-lg-2 Technologies-icons--icon '+'bg-'+id}></div>
         )
     }
 
@@ -18,7 +18,7 @@ export class Technologies extends React.Component {
                 </h1>
                 <div className='container' data-aos='fade-up'>
                     <div className='row Technologies-icons'>
-                        { icons.map((icon) => this.createIcon(icon)) }
+                        { icons.map((icon, i) => this.createIcon(icon, i)) }
                     </div>
                 </div>
             </div>

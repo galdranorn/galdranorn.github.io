@@ -24,6 +24,9 @@ addLocaleData(plLocaleData);
 addLocaleData(enLocaleData);
 
 export class App extends React.Component {
+  componentDidMount(){
+    document.title = "Justyna Skiberowska / Junior Front-End Developer"
+  }
   
   render() {
     return (

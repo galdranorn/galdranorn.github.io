@@ -29,9 +29,9 @@ export class Menu extends React.Component {
         )
     }
 
-    createNavItem(id) {
+    createNavItem(id, i) {
         return (
-            <NavItem className='Menu-navbar--nav-item'>
+            <NavItem className='Menu-navbar--nav-item' key={i}>
                 <NavLink className='Menu-navbar--nav-item-link' href={'#'+id}>
                     <FormattedMessage id={id} />
                 </NavLink>
@@ -54,7 +54,7 @@ export class Menu extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav id="menu" className="ml-auto Menu-navbar--nav" navbar data-aos='zoom-in'>
                             { this.createHome() }
-                            { components.map((component) => this.createNavItem(component)) }
+                            { components.map((component, i) => this.createNavItem(component, i)) }
                         </Nav>
                     </Collapse>
                 </Navbar>

@@ -32,10 +32,10 @@ ReactDOM.render(
 $(function() {
     $(window).scroll(function () {
        if ($(this).scrollTop() > 500) {
-          $('#menu, #lang').addClass('changeColor')
+          $('#menu, #lang, #hamburger').addClass('changeColor')
        }
        if ($(this).scrollTop() < 500) {
-          $('#menu, #lang').removeClass('changeColor')
+          $('#menu, #lang, #hamburger').removeClass('changeColor')
        }
     });
  });

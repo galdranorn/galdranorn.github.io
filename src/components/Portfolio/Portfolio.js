@@ -36,6 +36,7 @@ export class Portfolio extends React.Component {
         for (let i=0; i<currentShowLeft.length; i++) {
             rendered.push(
                 <Line
+                    key={i}
                     nameL={currentShowLeft[i].name} 
                     descriptionL={currentShowLeft[i].description} 
                     backgroundL={currentShowLeft[i].background}

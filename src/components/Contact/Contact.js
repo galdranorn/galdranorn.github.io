@@ -7,7 +7,9 @@ export class Contact extends React.Component {
         return (
             <div id='Contact' className='Contact'>
                 <div className='container'>
-                    <h1 className='Contact-header' data-aos='fade-down'>Contact</h1>
+                    <h1 className='Contact-header' data-aos='fade-down'>
+                        <FormattedMessage id="Contact"/>
+                    </h1>
                     <div data-aos='fade-up'>
                         <div className='Contact-line row'>
                             <div className='col-12 col-sm-12 col-md-2 col-lg-2 Contact-line--icon icon'>

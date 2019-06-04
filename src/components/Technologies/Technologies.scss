@@ -1,4 +1,5 @@
 @import '../../scss/mixins';
+@import '../../scss/animate.scss';
 
 .Technologies {
     @include section;
@@ -10,24 +11,78 @@
     }
 
     &-icons {
-        .bg-1 { background: url('../../images/icons/1html.png') };
-        .bg-2 { background: url('../../images/icons/2css.png') };
-        .bg-3 { background: url('../../images/icons/3rwd.png') };
-        .bg-4 { background: url('../../images/icons/4js.png') };
-        .bg-5 { background: url('../../images/icons/5bootstrap.png') };
-        .bg-6 { background: url('../../images/icons/6sass.png') };
-        .bg-7 { background: url('../../images/icons/7jquery.png') };
-        .bg-8 { background: url('../../images/icons//8api.png') };
-        .bg-9 { background: url('../../images/icons/9ajax.png') };
-        .bg-10 { background: url('../../images/icons/10node.png') };
-        .bg-11 { background: url('../../images/icons/11express.png') };
-        .bg-12 { background: url('../../images/icons/12mongo.png') };
-        .bg-13 { background: url('../../images/icons/13react.png') };
-        .bg-14 { background: url('../../images/icons/14redux.png') };
-        .bg-15 { background: url('../../images/icons/15git.png') };
-        .bg-16 { background: url('../../images/icons/16npm.png') };
-        .bg-17 { background: url('../../images/icons/17webpack.png') };
-        .bg-18 { background: url('../../images/icons/18mern.png') };
+        .bg-1 {
+            animation-duration: 3s; 
+            background: url('../../images/icons/1html.png') 
+        };
+        .bg-2 {
+            animation-duration: 2s; 
+            background: url('../../images/icons/2css.png') 
+        };
+        .bg-3 { 
+            animation-duration: 2.5s;
+            background: url('../../images/icons/3rwd.png') 
+        };
+        .bg-4 { 
+            animation-duration: 3.2s;
+            background: url('../../images/icons/4js.png') 
+        };
+        .bg-5 { 
+            animation-duration: 2.3s;
+            background: url('../../images/icons/5bootstrap.png') 
+        };
+        .bg-6 { 
+            animation-duration: 3s;
+            background: url('../../images/icons/6sass.png') 
+        };
+        .bg-7 { 
+            animation-duration: 2.1s;
+            background: url('../../images/icons/7jquery.png') 
+        };
+        .bg-8 { 
+            animation-duration: 2.8s;
+            background: url('../../images/icons//8api.png') 
+        };
+        .bg-9 { 
+            animation-duration: 3.2s;
+            background: url('../../images/icons/9ajax.png') 
+        };
+        .bg-10 { 
+            animation-duration: 2.7s;
+            background: url('../../images/icons/10node.png') 
+        };
+        .bg-11 { 
+            animation-duration: 2.2s;
+            background: url('../../images/icons/11express.png') 
+        };
+        .bg-12 { 
+            animation-duration: 3s;
+            background: url('../../images/icons/12mongo.png') 
+        };
+        .bg-13 { 
+            animation-duration: 2s;
+            background: url('../../images/icons/13react.png') 
+        };
+        .bg-14 { 
+            animation-duration: 2.3s;
+            background: url('../../images/icons/14redux.png') 
+        };
+        .bg-15 { 
+            animation-duration: 2.8s;
+            background: url('../../images/icons/15git.png') 
+        };
+        .bg-16 { 
+            animation-duration: 3.1s;
+            background: url('../../images/icons/16npm.png') 
+        };
+        .bg-17 { 
+            animation-duration: 2.3s;
+            background: url('../../images/icons/17webpack.png') 
+        };
+        .bg-18 { 
+            animation-duration: 2.9s;
+            background: url('../../images/icons/18mern.png') 
+        };
         &--icon {
             height: 80px;
             margin: 30px 0;
@@ -41,7 +96,8 @@
 @media (max-width: 575.98px) { 
     .Technologies {
         &-header {
-            font-size: 2em;
+            font-size: 4vh;
+            width: 90%;
         }
     }
 }

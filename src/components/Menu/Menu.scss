@@ -30,6 +30,10 @@
     }
     
     &-navbar {
+        .changeColor {
+            background: $themeGreyTrans;
+            border-radius: 15px;
+        }
         .navbar-nav {
             padding: 5px 20px;
             .nav-item .nav-link {
