@@ -1,6 +1,7 @@
 {
   "name": "galdranorn.github.io",
   "homepage": "https://galdranorn.github.io",
+  "permalink": "/index.html",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
