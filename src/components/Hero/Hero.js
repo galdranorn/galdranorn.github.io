@@ -20,7 +20,7 @@ export class Hero extends React.Component {
 
     render() {
         return (
-            <div id='Hero' className='Hero'>
+            <header id='Hero' className='Hero'>
                 <div className='Hero-text container'>
                     <div data-aos='fade-down'>
                         <p className='Hero-text--hi'><FormattedMessage id='Hero-hi'/></p>
@@ -30,7 +30,7 @@ export class Hero extends React.Component {
                     Junior <span id="typed"></span>
                     </h2>
                 </div>
-            </div>
+            </header>
         )
     }
 }

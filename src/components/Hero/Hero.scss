@@ -78,3 +78,20 @@
         }
     }
  }
+
+ @media (max-width: 340px) { 
+    .Hero {
+        text-align: center;
+        &-text {
+            &--hi{
+                font-size: 1em;
+            }
+            &--name {
+                font-size: 1.5em;
+            }
+            &--position {
+                font-size: 1em;
+            }
+        }
+    }
+}

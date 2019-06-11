@@ -1,15 +1,14 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { SectionTitle } from '../SectionTitle/SectionTitle';
 import './Contact.scss';
 
 export class Contact extends React.Component {
     render() {
         return (
-            <div id='Contact' className='Contact'>
+            <section id='Contact' className='Contact'>
                 <div className='container'>
-                    <h1 className='Contact-header' data-aos='fade-down'>
-                        <FormattedMessage id="Contact"/>
-                    </h1>
+                    <SectionTitle title="Contact" color='white'/>
                     <div data-aos='fade-up'>
                         <div className='Contact-line row'>
                             <div className='col-12 col-sm-12 col-md-2 col-lg-2 Contact-line--icon icon'>
@@ -45,7 +44,7 @@ export class Contact extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

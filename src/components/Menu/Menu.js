@@ -43,14 +43,14 @@ export class Menu extends React.Component {
         let components = ['About', 'Portfolio', 'Technologies', 'Contact'];
 
         return (
-            <div className='Menu'>
+            <nav className='Menu'>
                 <div id="lang" className='Menu-lang' data-aos='zoom-in'>
                     <button className='Menu-lang--button' onClick={() => this.props.setLanguage('pl')}>PL</button>|
                     <button className='Menu-lang--button' onClick={() => this.props.setLanguage('en')}>EN</button>
                 </div>
 
                 <Navbar className='Menu-navbar navbar-dark' expand="md">
-                    <NavbarToggler id="hamburger" className='Menu-navbar--hamburger' onClick={this.toggle} />
+                    <NavbarToggler className='Menu-navbar--hamburger changeColor' onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav id="menu" className="ml-auto Menu-navbar--nav" navbar data-aos='zoom-in'>
                             { this.createHome() }
@@ -58,7 +58,7 @@ export class Menu extends React.Component {
                         </Nav>
                     </Collapse>
                 </Navbar>
-            </div>
+            </nav>
         )
     }
 }

@@ -13,9 +13,11 @@ export const ProjectLeft = (props) => (
                         <a href={props.repo} target="_blank"><span className="Portfolio-line--text-icons-icon fas fa-code"></span></a>
                     </p>
                 </div>
-                <div className={'col-sm-4 col-md-4 col-lg-4 order-3 Portfolio-line--element '+props.background}>
-                    <div className='Portfolio-line--element-hover-left'></div>
-                </div>
+                <a className='col-sm-4 col-md-4 col-lg-4 order-3 Portfolio-line--element' href={props.repo} target="_blank">
+                    <div className={'thumbnail '+props.background}>
+                        <div className='thumbnail-hover-left'></div>
+                    </div>
+                </a>
             </div>
         </div>
 );

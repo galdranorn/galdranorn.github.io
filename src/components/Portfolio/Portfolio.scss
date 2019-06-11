@@ -5,13 +5,6 @@
     background: $themeGrey;
     padding-bottom: 170px;
 
-    &-header {
-        @include sectionHeader;
-        color: white;
-        width: 50%;
-        margin: 0 auto 40px;
-    }
-
     &-button {
         position: relative;
         top: 70px;
@@ -61,35 +54,37 @@
         }
 
         &--element {
-            background-size: contain !important;
-            background-repeat: no-repeat !important;
-            background-position: center !important;
-            position: relative;
-            height: 140px;
-            transition: .2s ease-in;
-            margin: 5px 0;
-            &:hover {
-                cursor: pointer;
-            }
-            &-hover-left {
-                background: url('../../images/projects/monstera-left.png');
-            }
-            &-hover-right {
-                background: url('../../images/projects/monstera-right.png');
-            }
-            &-hover-left, &-hover-right {
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-position: center;
-                background-color: transparent;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                z-index: 3;
-                transition: .5s ease-in;
+            .thumbnail {
+                background-size: contain !important;
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+                position: relative;
+                height: 140px;
+                transition: .2s ease-in;
+                margin: 5px 0;
                 &:hover {
-                    opacity: 0;
+                    cursor: pointer;
+                }
+                &-hover-left {
+                    background: url('../../images/projects/monstera-left.png');
+                }
+                &-hover-right {
+                    background: url('../../images/projects/monstera-right.png');
+                }
+                &-hover-left, &-hover-right {
+                    top: 0;
+                    left: 0;
+                    background-size: contain;
+                    background-position: center;
+                    background-color: transparent;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 3;
+                    transition: .5s ease-in;
+                    &:hover {
+                        opacity: 0;
+                    }
                 }
             }
         }
@@ -137,21 +132,24 @@
     }
 }
 
+@media (max-width: 767.98px) { 
+    .Portfolio-line--text {
+        text-align: left;
+    }
+}
+
 @media (max-width: 575.98px) { 
     .Portfolio {
-        &-header {
-            font-size: 5vh;
-            width: 90%;
-        }
         &-line {
-            min-height: 600px;
+            height: 660px;
             font-size: 0.9em;
             .hgt {min-height: 600px;}
             .moved {text-align: center;}
             &--text {
                 text-align: center;
                 color: white;
-                height: 155px;
+                height: auto;
+                padding-top: 50px;
                 &-header {
                     font-weight: 600;
                     font-size: 1.1em;
@@ -178,6 +176,14 @@
                     display: none;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 340px) { 
+    .Portfolio {
+        &-line {
+            height: 700px;
         }
     }
 }

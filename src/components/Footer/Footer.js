@@ -5,9 +5,9 @@ import './Footer.scss';
 export class Footer extends React.Component {
     render() {
         return (
-            <div className='Footer'>
+            <footer className='Footer'>
                 Made with <span className="far fa-heart"></span> in Wroclaw, 2019
-            </div>
+            </footer>
         )
     }
 }

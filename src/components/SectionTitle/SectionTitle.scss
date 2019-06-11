@@ -1,0 +1,33 @@
+@import '../../scss/mixins';
+
+.SectionTitle {
+    border-bottom: 10px solid $themeColour;
+    width: 500px;
+    margin: 0 auto 60px;
+
+    .white, .grey {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .white {color: white;}
+    .grey {color: $themeGrey;}
+}
+
+@media (max-width: 575.98px) { 
+    .SectionTitle {
+        width: 320px;
+        .white, .grey {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 340px) { 
+    .SectionTitle {
+        width: 200px;
+        .white, .grey {
+            font-size: 25px;
+        }
+    }
+}

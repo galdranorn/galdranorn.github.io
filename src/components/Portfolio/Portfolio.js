@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import Line from './Line/Line';
+import { SectionTitle } from '../SectionTitle/SectionTitle';
 import './Portfolio.scss';
 
 export class Portfolio extends React.Component {
@@ -55,14 +56,14 @@ export class Portfolio extends React.Component {
 
     render() {
         return (
-            <div id='Portfolio' className='Portfolio'>
-                <h1 className='Portfolio-header' data-aos='fade-down'>Portfolio</h1>
+            <section id='Portfolio' className='Portfolio'>
+                <SectionTitle title='Portfolio' color='white'/>
                 <div className='container' data-aos='fade-up'>
                     {this.renderProjects()}
                 </div>
                 
                 { this.createButton() }
-            </div>
+            </section>
         )
     }
 }

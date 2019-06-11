@@ -7,16 +7,6 @@
     background: url('../../images/contact.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
-
-    &-header {
-        @include sectionHeader;
-        width: 70%;
-        font-size: 50px;
-        color: white;
-        margin: 0 auto;
-        margin-bottom: 40px;
-    }
-
     &-line {
         color: white;
         text-align: left;
@@ -68,12 +58,21 @@
 
 @media (max-width: 575.98px) { 
     .Contact {
-        &-header {
-            font-size: 5vh;
-        }
         &-line {
             &--link {
                 text-align: center;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) { 
+    .Contact {
+        &-line {
+            &--link {
+                text-align: center;
+                font-size: 0.8em;
             }
         }
     }
