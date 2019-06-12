@@ -19,11 +19,12 @@
         }
         &--hi{
             padding-left: 20px;
+            font-size: 30px;
         }
         &--name {
             width: 500px;
             border-bottom: 10px solid $themeColour;
-            font-size: 5vw;
+            font-size: 80px;
             font-weight: 900;
         }
         &--position {
@@ -53,8 +54,11 @@
 
 @media (max-width: 767.98px) { 
     .Hero {
-        &-text--name {
-            font-size: 40px;
+        &-text {
+            padding: 20px;
+            &--name {
+                font-size: 50px;
+            }
         }
     }
 }
@@ -63,12 +67,12 @@
     .Hero {
         text-align: center;
         &-text {
-            &--hi{
-                font-size: 25px;
+            &--hi {
+                font-size: 20px;
             }
             &--name {
-                font-size: 2em;
-                width: 95%;
+                font-size: 35px;
+                width: 310px;
                 margin: 0 auto;
             }
             &--position {
@@ -83,11 +87,13 @@
     .Hero {
         text-align: center;
         &-text {
+            padding: 5px;
             &--hi{
-                font-size: 1em;
+                font-size: 10px;
             }
             &--name {
-                font-size: 1.5em;
+                font-size: 20px;
+                width: 200px;
             }
             &--position {
                 font-size: 1em;
