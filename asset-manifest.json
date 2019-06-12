@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5386188.chunk.css",
+    "main.js": "/static/js/main.920ee624.chunk.js",
+    "main.js.map": "/static/js/main.920ee624.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.87c3ea4e.chunk.css": "/static/css/2.87c3ea4e.chunk.css",
+    "static/js/2.59bb5830.chunk.js": "/static/js/2.59bb5830.chunk.js",
+    "static/js/2.59bb5830.chunk.js.map": "/static/js/2.59bb5830.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.183d9f069d581d43080d1b039cf6cd64.js": "/precache-manifest.183d9f069d581d43080d1b039cf6cd64.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.87c3ea4e.chunk.css.map": "/static/css/2.87c3ea4e.chunk.css.map",
+    "static/css/main.c5386188.chunk.css.map": "/static/css/main.c5386188.chunk.css.map",
+    "static/media/Technologies.scss": "/static/media/9ajax.04d40c2e.png",
+    "static/media/About.scss": "/static/media/about.0f952e33.jpg",
+    "static/media/Contact.scss": "/static/media/contact.7616ae81.jpg",
+    "static/media/Portfolio.scss": "/static/media/project9.2645902f.png",
+    "static/media/Hero.scss": "/static/media/monstera.790c8a67.jpg"
+  }
+}
